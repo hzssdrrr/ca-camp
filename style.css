@@ -1,1 +1,182 @@
-/* Add styles here */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #1f2937;
+    background-color: #ffffff;
+}
+
+/* Container */
+.container-custom {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Curve Sections */
+.curve-top {
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.curve-top::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: white;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+
+.curve-bottom {
+    position: relative;
+    margin-top: -60px;
+    padding-top: 60px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+/* Circle Icon */
+.circle-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+/* Card Hover */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #10b981;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #059669;
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+.btn-outline {
+    border: 2px solid #10b981;
+    color: #10b981;
+    background: transparent;
+    padding: 10px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-outline:hover {
+    background-color: #10b981;
+    color: white;
+}
+
+/* Section Styles */
+.section-light {
+    background-color: #f8fafb;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #10b981;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.scroll-indicator:hover {
+    background-color: rgba(16, 185, 129, 0.1);
+}
+
+/* Form Styles */
+input,
+textarea {
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .btn-primary,
+    .btn-outline {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 2.25rem !important;
+    }
+
+    h2 {
+        font-size: 1.875rem !important;
+    }
+}
+
+/* Animation */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-hover {
+    animation: slideInUp 0.6s ease-out;
+}
+
+/* Utility Classes */
+.text-gradient {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

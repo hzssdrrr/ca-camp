@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>존중 캠페인 포스터 | 순천하이테크센터 CA캠페인</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .poster-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(79, 70, 229, 0.2);
+            transition: all 0.3s ease;
+            user-select: none;
+        }
+
+        .poster-image:hover {
+            box-shadow: 0 25px 60px rgba(79, 70, 229, 0.3);
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-indigo-600">순천하이테크센터</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="index.html#respect" class="text-gray-700 hover:text-indigo-600 px-3 py-2 font-medium transition">돌아가기</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-slate-100 via-slate-50 to-white relative pt-32 pb-20 lg:pt-40 lg:pb-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-4">
+                    존중 캠페인
+                </h1>
+                <p class="text-xl text-gray-600 mb-2">
+                    나부터, 먼저, 함께 존중하기
+                </p>
+                <p class="text-lg text-gray-500">
+                    올해의 슬로건과 행동원칙을 확인하세요
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Poster Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- 포스터 이미지 -->
+            <div class="mb-12">
+                <img src="assets/images/respect.png" alt="존중 캠페인 포스터" class="poster-image w-full">
+            </div>
+
+            <!-- 다운로드 버튼 -->
+            <div class="flex gap-4 justify-center mb-12">
+                <a href="assets/images/respect.png" download="존중캠페인_포스터.png" class="inline-block px-10 py-4 bg-indigo-600 text-white rounded-lg font-bold text-lg hover:bg-indigo-700 shadow-lg transition">
+                    포스터 다운로드
+                </a>
+                <a href="index.html#respect" class="inline-block px-10 py-4 bg-gray-200 text-gray-900 rounded-lg font-bold text-lg hover:bg-gray-300 transition">
+                    돌아가기
+                </a>
+            </div>
+
+            <!-- 설명 섹션 -->
+            <div class="bg-gradient-to-r from-slate-50 to-slate-100 rounded-2xl p-8 border border-slate-200">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">존중 캠페인 안내</h2>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4">
+                        <div class="text-2xl flex-shrink-0">🤝</div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">캠페인 목표</h3>
+                            <p class="text-gray-700">
+                                센터 내 모든 구성원이 서로 존중하고, 존중받는 문화를 만들어갑니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="text-2xl flex-shrink-0">💡</div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">슬로건</h3>
+                            <p class="text-gray-700">
+                                <span class="font-bold text-indigo-600">나부터, 먼저, 함께 존중하기</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <span class="text-2xl font-bold text-indigo-400">순천하이테크센터</span>
+                    <p class="mt-2 text-gray-400 text-sm">© 2026 CA Campaign. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
